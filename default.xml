@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-10.0.0_r36"
            remote="aosp"
@@ -783,5 +783,14 @@
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+
+  <!-- Remove unused AOSP repos -->
+   <include name="404/obsolete.xml" />
+
+   <!-- Project-404 -->
+   <include name="404/404.xml" />
+
+   <!-- Lineage Stuff -->
+   <include name="404/lineage.xml" />
 
 </manifest>

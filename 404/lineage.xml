@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="lineage"
+            fetch="https://github.com/LineageOS"
+            revision="refs/heads/lineage-17.1" />
+
+    <!-- Vendor -->
+    <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="lineage" />
+    <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="lineage" />
+    <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="lineage" />
+    <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="lineage" />
+    <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="lineage">
+        <copyfile src="os_pickup.bp" dest="vendor/qcom/opensource/Android.bp" />
+    </project>
+    <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="lineage" />
+
+    <!-- External -->
+    <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="lineage" />
+    <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="lineage" />
+    <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="lineage" />
+    <project path="external/exfat" name="android_external_exfat" remote="lineage" />
+    <project path="external/json-c" name="android_external_json-c" remote="lineage" />
+
+    <!-- Hardware -->
+    <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" remote="lineage" revision="lineage-17.1" />
+    <project path="hardware/ril" name="android_hardware_ril" remote="lineage" revision="lineage-17.1" />
+    <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" remote="lineage" revision="lineage-17.1-caf" />
+    <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="lineage" />
+    <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" remote="lineage" />
+    <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="lineage" revision="lineage-17.1-caf" />
+
+    <!-- Packages -->
+    <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
+
+    <!-- Prebuilts -->
+    <project path="prebuilts/openssl" name="android_prebuilts_openssl" remote="lineage" clone-depth="1" revision="lineage-17.0" />
+    <project path="prebuilts/tools-p404" name="android_prebuilts_tools-lineage" remote="lineage" clone-depth="1" />
+
+</manifest>

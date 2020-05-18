@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Github remote -->
+  <remote name="github"
+          fetch="https://github.com/" />
+
+  <remote name="404"
+          fetch="https://github.com/P-404/"
+          revision="qemu" />
+
+  <remote name="404-devices"
+          fetch="https://github.com/P-404-Devices/"
+          revision="qemu" />
+
+  <!-- 404 Repos -->
+
+  <!-- General -->
+  <project path="art" name="platform_art" remote="404" />
+  <project path="build/make" name="platform_build" remote="404">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="platform_build_soong" remote="404">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="bionic" name="platform_bionic" remote="404"/>
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="404"/>
+  <project path="build/blueprint" name="platform_build_blueprint" remote="404"/>
+  <project path="libcore" name="platform_libcore" remote="404" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="platform_frameworks_av" remote="404"/>
+  <project path="frameworks/base" name="platform_frameworks_base" remote="404"/>
+  <project path="frameworks/native" name="platform_frameworks_native" remote="404"/>
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="404" />
+  <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="404" />
+  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="404" />
+
+  <!-- External -->
+  <project path="external/angle" name="platform_external_angle" remote="404" />
+  <project path="external/arm-optimized-routines" name="platform_external_arm-optimized-routines" remote="404" />
+  <project path="external/kernel-headers" name="platform_external_kernel-headers" remote="404" />
+  <project path="external/jemalloc_new" name="platform_external_jemalloc-new" remote="404" />
+  <project path="external/libhevc" name="platform_external_libhevc" remote="404" />
+  <project path="external/libjpeg-turbo" name="platform_external_libjpeg-turbo" remote="404" />
+  <project path="external/libpng" name="platform_external_libpng" remote="404" />
+  <project path="external/selinux" name="platform_external_selinux" remote="404" />
+  <project path="external/skia" name="platform_external_skia" remote="404" />
+  <project path="external/sqlite" name="platform_external_sqlite" remote="404" />
+  <project path="external/zlib" name="platform_external_zlib" remote="404" />
+  <project path="external/libnfc-nxp" name="platform_external_libnfc-nxp" remote="404" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" remote="404"/>
+
+  <!-- Device -->
+  <project path="device/404/sepolicy" name="platform_device_404_sepolicy" remote="404" />
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="404" />
+  <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy" remote="404" revision="qemu-legacy-um" />
+
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="404"/>
+  <project path="hardware/404/interfaces" name="platform_hardware_404_interfaces" remote="404"/>
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="404"/>
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="404"/>
+  <project path="hardware/nxp/nfc" name="platform_hardware_nxp_nfc" remote="404" />
+  <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" remote="404" >
+      <!-- add guards for CAF repositories -->
+      <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+      <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+      <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+      <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+      <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
+      <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
+    </project>
+  <project path="hardware/qcom-caf/msm8996/audio" name="platform_hardware_qcom-caf_audio" revision="qemu-8996" remote="404" />
+  <project path="hardware/qcom-caf/msm8996/display" name="platform_hardware_qcom-caf_display" revision="qemu-8996" remote="404" />
+  <project path="hardware/qcom-caf/msm8996/media" name="platform_hardware_qcom-caf_media" revision="qemu-8996" remote="404" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="platform_hardware_qcom-caf_audio" revision="qemu-8998" remote="404" />
+  <project path="hardware/qcom-caf/msm8998/display" name="platform_hardware_qcom-caf_display" revision="qemu-8998" remote="404" />
+  <project path="hardware/qcom-caf/msm8998/media" name="platform_hardware_qcom-caf_media" revision="qemu-8998" remote="404" />
+  <project path="hardware/qcom-caf/sdm845/audio" name="platform_hardware_qcom-caf_audio" revision="qemu-845" remote="404" />
+  <project path="hardware/qcom-caf/sdm845/display" name="platform_hardware_qcom-caf_display" revision="qemu-845" remote="404" />
+  <project path="hardware/qcom-caf/sdm845/media" name="platform_hardware_qcom-caf_media" revision="qemu-845" remote="404" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="platform_hardware_qcom-caf_audio" revision="qemu-8150" remote="404" />
+  <project path="hardware/qcom-caf/sm8150/display" name="platform_hardware_qcom-caf_display" revision="qemu-8150" remote="404" />
+  <project path="hardware/qcom-caf/sm8150/media" name="platform_hardware_qcom-caf_media" revision="qemu-8150" remote="404" />
+
+  <!-- System -->
+  <project path="system/bt" name="platform_system_bt" remote="404"/>
+  <project path="system/core" name="platform_system_core" remote="404"/>
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="404"/>
+  <project path="system/tools/hidl" name="platform_system_tools_hidl" remote="404"/>
+  <project path="system/vold" name="platform_system_vold" remote="404"/>
+
+  <!-- Package -->
+  <project path="packages/apps/Covers" name="platform_packages_apps_Covers" remote="404" />
+  <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" remote="404" />
+  <project path="packages/apps/PermissionController" name="platform_packages_apps_PackageInstaller" remote="404" />
+  <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="404" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="404" />
+  <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" remote="404" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="404" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="404" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="404" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="404" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/abi-dumps/ndk" name="platform_prebuilts_abi-dumps_ndk" remote="404" />
+  <project path="prebuilts/abi-dumps/vndk" name="platform_prebuilts_abi-dumps_vndk" remote="404" />
+  <project path="prebuilts/build-tools" name="platform_prebuilts_build-tools" remote="404" />
+  <project path="prebuilts/r8" name="platform_prebuilts_r8" remote="404" />
+
+  <!-- Vendor -->
+  <project path="vendor/404" name="platform_vendor_404" remote="404" />
+  <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="404" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="platform_vendor_nxp_interfaces_opensource_nfc" remote="404" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="platform_vendor_nxp_opensource_external_libnfc-nci" remote="404" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="platform_vendor_nxp_opensource_frameworks" remote="404" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="platform_vendor_nxp_opensource_packages_apps_Nfc" remote="404" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" name="platform_vendor_nxp_opensource_sn100x_halimpl" remote="404" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="platform_vendor_nxp_opensource_sn100x_hidlimpl" remote="404" />
+  <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" remote="404" />
+
+</manifest>
