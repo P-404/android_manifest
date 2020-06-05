@@ -34,6 +34,7 @@
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="404"/>
   <project path="build/blueprint" name="platform_build_blueprint" remote="404"/>
   <project path="libcore" name="platform_libcore" remote="404" />
+  <project path="platform_testing" name="platform_platform_testing" remote="404" />
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="platform_frameworks_av" remote="404"/>
@@ -105,8 +106,12 @@
   <project path="system/vold" name="platform_system_vold" remote="404"/>
 
   <!-- Package -->
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="404" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="404" />
+  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="404" />
   <project path="packages/apps/404Launcher" name="platform_packages_apps_404Launcher" remote="404" />
   <project path="packages/apps/Covers" name="platform_packages_apps_Covers" remote="404" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="404" />
   <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" remote="404" />
   <project path="packages/apps/PermissionController" name="platform_packages_apps_PackageInstaller" remote="404" />
   <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" remote="404" />
