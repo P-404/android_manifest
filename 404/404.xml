@@ -101,6 +101,7 @@
   <!-- System -->
   <project path="system/bt" name="platform_system_bt" remote="404"/>
   <project path="system/core" name="platform_system_core" remote="404"/>
+  <project path="system/netd" name="platform_system_netd" remote="404"/>
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="404"/>
   <project path="system/tools/hidl" name="platform_system_tools_hidl" remote="404"/>
   <project path="system/vold" name="platform_system_vold" remote="404"/>
