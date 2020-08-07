@@ -37,7 +37,7 @@ Bugs not found!
  - For common porting related errors, visit [**Android Building Help**](https://t.me/AndroidBuildingHelp)
 
  ### Adding Support
- - For adding your device to the list of supported devices, please message [**Markakash**](https://t.me/markakash) with your device tree and previous experience in building roms.
+ - For adding your device to the list of supported devices, please fill the maintainers form [**Form**](https://github.com/P-404/stuff) with your device tree and previous experience in building roms.
 
  ### Follow  us for more
  * [**Telegram Group**](https://t.me/project_404)
