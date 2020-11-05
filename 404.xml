@@ -59,6 +59,8 @@
   <!-- External (AOSP) -->
   <remove-project name="platform/external/libhevc" />
   <project path="external/libhevc" name="platform/external/libhevc" remote="aosp" />
+  <remove-project name="platform/external/sqlite" />
+  <project path="external/sqlite" name="android_external_sqlite" remote="404" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av" />
