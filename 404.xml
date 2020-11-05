@@ -82,6 +82,8 @@
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/404Launcher" name="android_packages_apps_404Launcher" remote="404" />
+  <remove-project name="platform/packages/apps/Nfc" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="404" />
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="404" />
   <remove-project name="platform/packages/apps/ThemePicker" />
