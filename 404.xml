@@ -47,6 +47,8 @@
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="404" />
   <remove-project name="platform/external/json-c" />
   <project path="external/json-c" name="android_external_json-c" remote="404" />
+  <remove-project name="platform/external/kernel-headers" />
+  <project path="external/kernel-headers" name="android_external_kernel-headers" remote="404" />
   <remove-project name="platform/external/libjpeg-turbo" />
   <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="404" />
   <remove-project name="platform/external/libpng" />
