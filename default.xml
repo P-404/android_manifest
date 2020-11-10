@@ -5,7 +5,7 @@
   <remote name="aosp"
           fetch="https://android.googlesource.com"
           review="https://android-review.googlesource.com/"
-          revision="refs/tags/android-11.0.0_r8"/>
+          revision="refs/tags/android-11.0.0_r15"/>
 
   <!-- CAF -->
   <remote name="caf_system"
@@ -17,7 +17,7 @@
           review="codeaurora.org"
           revision="refs/tags/LA.UM.9.12.r1-08700-SMxx50.0"/>
 
-  <default revision="refs/tags/LA.QSSI.11.0.r1-07100-qssi.0"
+  <default revision="refs/tags/LA.QSSI.11.0.r1-07500-qssi.0"
            remote="caf_system"/>
 
   <include name="system.xml"/>
