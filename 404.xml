@@ -118,6 +118,8 @@
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="404" />
 
   <!-- Vendor (CAF) -->
+  <remove-project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom-opensource_packages_apps_Bluetooth" remote="404" />
   <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom-opensource_bluetooth-commonsys-intf" remote="404" />
   <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf"/>
