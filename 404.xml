@@ -75,6 +75,7 @@
   <!-- Hardware -->
   <remove-project name="platform/hardware/interfaces" />
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="404" />
+  <project path="hardware/404/interfaces" name="android_hardware_404_interfaces" remote="404" />
   <remove-project name="platform/hardware/qcom/wlan" />
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="404" />
 
