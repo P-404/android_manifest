@@ -125,6 +125,7 @@
   <!-- Vendor -->
   <project path="vendor/404" name="android_vendor_404" remote="404" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="404" />
+  <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="404" />
 
   <!-- Vendor (CAF) -->
   <remove-project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" />
