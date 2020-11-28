@@ -9,6 +9,10 @@
           fetch="https://github.com/P-404/"
           revision="rippa" />
 
+  <remote name="404-gitlab"
+          fetch="https://gitlab.com/project-404"
+          revision="rippa" />
+
   <!-- 404 Repos -->
 
   <!-- Build and Core -->
@@ -59,6 +63,7 @@
   <project path="external/zlib" name="android_external_zlib" remote="404" />
   <remove-project name="platform/external/libhevc" />
   <project path="external/libhevc" name="android_external_libhevc" remote="404" />
+  <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="404-gitlab" />
   <remove-project name="platform/external/skia" />
   <project path="external/skia" name="android_external_skia" remote="404" />
   <remove-project name="platform/external/sqlite" />
@@ -124,6 +129,8 @@
 
   <!-- Vendor -->
   <project path="vendor/404" name="android_vendor_404" remote="404" />
+  <project path="vendor/google/gms" name="proprietary_vendor_google_gms" remote="404-gitlab" />
+  <project path="vendor/google/pixel" name="proprietary_vendor_google_pixel" remote="404-gitlab" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="404" />
   <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="404" />
 
