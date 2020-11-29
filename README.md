@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/markakash/404_stuff/master/project404-darkbanner.jpg" />
 </p>
 
-A project that shouldn't have exsist by the laws of the internet and yet it does we present you Project 404 just like the  Schrödinger's cat xD
+A project that shouldn't have existed by the laws of the internet and yet it does; we present you Project 404, just like the Schrödinger's cat!
 
  Credits
  -------
@@ -13,7 +13,7 @@ A project that shouldn't have exsist by the laws of the internet and yet it does
   * [**AOSPA**](https://github.com/AOSPA)  
 
  # Project 404
-Bugs not found!
+Error 404: Bugs not found!
 
  ### Requirements
  - Around 100G disk space
