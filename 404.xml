@@ -141,6 +141,8 @@
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom-opensource_bluetooth-commonsys-intf" remote="404" />
   <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="404" />
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/fm" name="android_vendor_qcom-opensource_fm-commonsys" remote="404" />
   <remove-project name="platform/vendor/qcom-opensource/interfaces" />
   <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom-opensource_interfaces" remote="404" />
   <remove-project name="platform/vendor/qcom-opensource/power" />
