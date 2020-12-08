@@ -53,6 +53,8 @@
   <project path="external/json-c" name="android_external_json-c" remote="404" />
   <remove-project name="platform/external/kernel-headers" />
   <project path="external/kernel-headers" name="android_external_kernel-headers" remote="404" />
+  <remove-project name="platform/external/libgav1" />
+  <project path="external/libgav1" name="android_external_libgav1" remote="404" />
   <remove-project name="platform/external/libjpeg-turbo" />
   <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="404" />
   <remove-project name="platform/external/libpng" />
