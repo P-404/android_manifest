@@ -49,6 +49,8 @@
   <!-- External -->
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="404" />
+  <remove-project name="platform/external/cpu_features" />
+  <project path="external/cpu_features" name="android_external_cpu_features" remote="404" />
   <remove-project name="platform/external/json-c" />
   <project path="external/json-c" name="android_external_json-c" remote="404" />
   <remove-project name="platform/external/kernel-headers" />
