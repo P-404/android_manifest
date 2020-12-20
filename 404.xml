@@ -127,6 +127,10 @@
   <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="404" />
 
   <!-- System -->
+  <remove-project name="platform/system/bpf" />
+  <project path="system/bpf" name="android_system_bpf" remote="404" />
+  <remove-project name="platform/system/bpfprogs" />
+  <project path="system/bpfprogs" name="android_system_bpfprogs" remote="404" />
   <remove-project name="platform/system/core" />
   <project path="system/core" name="android_system_core" remote="404" />
   <remove-project name="platform/system/memory/lmkd" />
