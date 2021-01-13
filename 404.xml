@@ -35,6 +35,8 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <remove-project name="platform/libcore" />
+  <project path="libcore" name="android_libcore" remote="404" />
 
   <!-- Bootable -->
   <remove-project name="platform/bootable/recovery" />
@@ -138,6 +140,8 @@
   <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="404" />
   <remove-project name="platform/system/netd" />
   <project path="system/netd" name="android_system_netd" remote="404" />
+  <remove-project name="platform/system/security" />
+  <project path="system/security" name="android_system_security" remote="404" />
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="404" />
   <remove-project name="platform/system/vold" />
