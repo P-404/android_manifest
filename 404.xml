@@ -55,6 +55,8 @@
   <project path="external/cpu_features" name="android_external_cpu_features" remote="404" />
   <remove-project name="platform/external/chromium-webview" />
   <project path="external/chromium-webview" name="platform/external/chromium-webview" remote="aosp" clone-depth="1" />
+  <remove-project name="platform/external/jemalloc_new" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="404" />
   <remove-project name="platform/external/json-c" />
   <project path="external/json-c" name="android_external_json-c" remote="404" />
   <remove-project name="platform/external/kernel-headers" />
