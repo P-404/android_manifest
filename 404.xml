@@ -138,6 +138,8 @@
   <project path="system/bpfprogs" name="android_system_bpfprogs" remote="404" />
   <remove-project name="platform/system/core" />
   <project path="system/core" name="android_system_core" remote="404" />
+  <remove-project name="platform/system/libhwbinder" />
+  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="404" />
   <remove-project name="platform/system/memory/lmkd" />
   <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="404" />
   <remove-project name="platform/system/netd" />
