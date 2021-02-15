@@ -80,7 +80,8 @@
   <project path="external/skia" name="android_external_skia" remote="404" />
   <remove-project name="platform/external/sqlite" />
   <project path="external/sqlite" name="android_external_sqlite" remote="404" />
-
+  <project path="external/exfatprogs" name="android_external_exfatprogs" remote="404" />
+  
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av" />
   <project path="frameworks/av" name="android_frameworks_av" remote="404" />
