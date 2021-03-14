@@ -49,6 +49,8 @@
   </project>
 
   <!-- External -->
+  <remove-project name="platform/external/angle" />
+  <project path="external/angle" name="android_external_angle" remote="404" />
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="404" />
   <remove-project name="platform/external/cpu_features" />
