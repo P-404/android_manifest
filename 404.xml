@@ -47,7 +47,8 @@
   <project path="device/qcom/common" name="android_device_qcom_common" remote="404" >
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
-
+  <project path="device/404/sepolicy" name="android_device_404_sepolicy" remote="404" />
+  
   <!-- External -->
   <remove-project name="platform/external/angle" />
   <project path="external/angle" name="android_external_angle" remote="404" />
