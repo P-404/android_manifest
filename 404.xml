@@ -154,6 +154,8 @@
   <project path="system/iorap" name="android_system_iorap" remote="404" />
   <remove-project name="platform/system/libhwbinder" />
   <project path="system/libhwbinder" name="android_system_libhwbinder" remote="404" />
+  <remove-project name="platform/system/media" />
+  <project path="system/media" name="android_system_media" remote="404" />
   <remove-project name="platform/system/memory/lmkd" />
   <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="404" />
   <remove-project name="platform/system/netd" />
