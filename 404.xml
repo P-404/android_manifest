@@ -204,5 +204,9 @@
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom-opensource_vibrator" remote="404" />
   <remove-project name="platform/vendor/qcom-opensource/usb" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom-opensource_usb" remote="404" />
+  <remove-project name="platform/vendor/nxp/opensource/halimpl" />
+  <project path="vendor/nxp/opensource/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="404">
+     <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
+  </project>
 
 </manifest>
