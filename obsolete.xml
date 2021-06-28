@@ -53,4 +53,7 @@
   <remove-project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" />
   <remove-project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" />
 
+  <!-- Packages -->
+  <remove-project name="platform/packages/apps/Car/CompanionDeviceSupport" />
+
 </manifest>
