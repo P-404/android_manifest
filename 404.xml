@@ -79,8 +79,6 @@
   <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="404-gitlab" />
   <remove-project name="platform/external/roboto-fonts" />
   <project path="external/roboto-fonts" name="android_external_roboto-fonts" remote="404" />
-  <remove-project name="platform/external/skia" />
-  <project path="external/skia" name="android_external_skia" remote="404" />
   <remove-project name="platform/external/sqlite" />
   <project path="external/sqlite" name="android_external_sqlite" remote="404" />
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="404" />
@@ -167,8 +165,6 @@
   <project path="system/iorap" name="android_system_iorap" remote="404" />
   <remove-project name="platform/system/libhwbinder" />
   <project path="system/libhwbinder" name="android_system_libhwbinder" remote="404" />
-  <remove-project name="platform/system/media" />
-  <project path="system/media" name="android_system_media" remote="404" />
   <remove-project name="platform/system/memory/lmkd" />
   <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="404" />
   <remove-project name="platform/system/netd" />
