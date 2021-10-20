@@ -10,7 +10,6 @@ A project that shouldn't have existed by the laws of the internet and yet it doe
   * [**LineageOS**](https://github.com/LineageOS)
   * [**Dirty Unicorns**](https://github.com/DirtyUnicorns)
   * [**Potato Project**](https://github.com/PotatoProject)
-  * [**AOSPA**](https://github.com/AOSPA)  
 
  # Project 404
 Error 404: Bugs not found!
@@ -27,7 +26,7 @@ Error 404: Bugs not found!
 
  	```bash
          mkdir p-404 && cd p-404
-         repo init -u https://github.com/P-404/platform_manifest -b rippa
+         repo init -u https://github.com/P-404/platform_manifest -b shinka
          repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
  	```
 

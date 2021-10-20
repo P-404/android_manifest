@@ -71,6 +71,5 @@
   <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" remote="caf_vendor"/>
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" remote="caf_vendor"/>
   <project name="platform/vendor/qcom/kona" path="device/qcom/kona" remote="caf_vendor"/>
-  <project name="platform/vendor/qcom/lito" path="device/qcom/lito" remote="caf_vendor"/>
   <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" remote="caf_vendor"/>
 </manifest>

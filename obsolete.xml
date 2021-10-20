@@ -24,8 +24,6 @@
   <remove-project name="device/google/atv" />
   <remove-project name="device/google/contexthub" />
   <remove-project name="device/google/cuttlefish" />
-  <remove-project name="device/google/cuttlefish_kernel" />
-  <remove-project name="device/google/cuttlefish_vmm" />
   <remove-project name="device/google/vrservices" />
   <remove-project name="device/google_car" />
   <remove-project name="device/linaro/dragonboard" />
@@ -52,8 +50,5 @@
   <remove-project name="platform/vendor/qcom-opensource/wlan/fw-api" />
   <remove-project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" />
   <remove-project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" />
-
-  <!-- Packages -->
-  <remove-project name="platform/packages/apps/Car/CompanionDeviceSupport" />
 
 </manifest>
