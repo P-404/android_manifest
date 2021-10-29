@@ -16,6 +16,25 @@
   <!-- 404 Repos -->
 
   <!-- Build and Core -->
+  <remove-project name="platform/build" />
+  <project path="build/make" name="android_build" remote="404" caf="platform/build" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="android_build_soong" remote="404" caf="platform/build/soong" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Bootable -->
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="404" caf="platform/bootable/recovery" />
 
   <!-- Device -->
   <remove-project name="device/qcom/common" />
@@ -30,9 +49,15 @@
 
   <!-- Hardware -->
   <project path="hardware/404/interfaces" name="android_hardware_404_interfaces" remote="404" />
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="404" />
 
   <!-- Manifest -->
   <project path="manifest" name="android_manifest" remote="404" />
+
+  <!-- System -->
+  <remove-project name="platform/system/tools/hidl" />
+  <project path="system/tools/hidl" name="android_system_tools_hidl" remote="404" />
 
   <!-- Vendor -->
   <project path="vendor/404" name="android_vendor_404" remote="404" />
@@ -41,4 +66,24 @@
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="404" />
   <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="404" />
 
+  <!-- Vendor (CAF) -->
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/fm" name="android_vendor_qcom-opensource_fm-commonsys" remote="404" caf="platform/vendor/qcom-opensource/fm-commonsys" />
+  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom-opensource_interfaces" remote="404" caf="platform/vendor/qcom-opensource/interfaces" />
+  <remove-project name="platform/vendor/qcom-opensource/power" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="404">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk" remote="404"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk" remote="404"/>
+  </project>
+  <remove-project name="platform/vendor/qcom-opensource/vibrator" />
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom-opensource_vibrator" remote="404" />
+  <remove-project name="platform/vendor/qcom-opensource/usb" />
+  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom-opensource_usb" remote="404" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom-opensource_bluetooth-commonsys-intf" remote="404" caf="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom-opensource_display-commonsys" remote="404" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
+  </project>
 </manifest>

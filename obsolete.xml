@@ -37,7 +37,9 @@
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/gps" />
   <remove-project name="platform/hardware/qcom/media" />
-
+  <remove-project name="platform/hardware/nxp/nfc" />
+  <remove-project name="platform/hardware/nxp/secure_element" />
+  
   <!-- Kernel -->
   <remove-project name="kernel/build" />
   <remove-project name="kernel/msm-4.19" />
