@@ -47,6 +47,10 @@
   <remove-project  name="device/qcom/sepolicy" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="404" />
 
+  <!-- External -->
+  <remove-project name="platform/external/arm-optimized-routines" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="404" />
+
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="android_frameworks_base" remote="404" caf="platform/frameworks/base" />
