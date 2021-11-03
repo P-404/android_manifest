@@ -163,7 +163,7 @@
   <remove-project name="platform/system/bpfprogs" />
   <project path="system/bpfprogs" name="android_system_bpfprogs" remote="404" />
   <remove-project name="platform/system/core" />
-  <project path="system/core" name="android_system_core" remote="404" caf="platform/system/core" />
+  <project path="system/core" name="platform_system_core" remote="404" caf="platform/system/core" />
   <remove-project name="platform/system/hwservicemanager" path="system/hwservicemanager"/>
   <project path="system/hwservicemanager" name="android_system_hwservicemanager" remote="404" caf="platform/system/hwservicemanager" />
   <remove-project name="platform/system/iorap" path="system/iorap"/>
