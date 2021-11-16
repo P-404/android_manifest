@@ -36,6 +36,10 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- Bionic -->
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="android_bionic" remote="404" caf="platform/bionic" />
+
   <!-- Bootable -->
   <remove-project name="platform/bootable/recovery" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="404" caf="platform/bootable/recovery" />
@@ -54,8 +58,14 @@
   <!-- External -->
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="404" />
+  <remove-project name="platform/external/jemalloc_new" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="404" />
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="404" />
   <remove-project name="platform/external/sqlite" />
   <project path="external/sqlite" name="android_external_sqlite" remote="404" />
+  <remove-project name="platform/external/zlib" />
+  <project path="external/zlib-ng" name="android_external_zlib-ng" remote="404" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
