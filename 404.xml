@@ -123,7 +123,11 @@
   <project path="system/core" name="android_system_core" remote="404" caf="platform/system/core" />
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="404" caf="platform/system/sepolicy" />
-  
+  <remove-project name="platform/system/netd" />
+  <project path="system/netd" name="android_system_netd" remote="404" caf="platform/system/netd" />
+  <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="android_system_vold" remote="404" caf="platform/system/vold" />
+    
   <!-- Vendor -->
   <project path="vendor/404" name="android_vendor_404" remote="404" />
   <project path="vendor/overlays/404" name="android_vendor_overlays_404" remote="404" />
