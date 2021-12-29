@@ -117,6 +117,8 @@
   </project>
   
   <!-- Prebuilts -->
+  <remove-project name="platform/prebuilts/abi-dumps/ndk" />
+  <project path="prebuilts/abi-dumps/ndk" name="android_prebuilts_abi-dumps_ndk" remote="404" />
   <remove-project name="platform/prebuilts/abi-dumps/vndk" />
   <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="404" />
   
