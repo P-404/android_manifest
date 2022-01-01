@@ -139,8 +139,7 @@
   <!-- Vendor -->
   <project path="vendor/404" name="android_vendor_404" remote="404" />
   <project path="vendor/overlays/404" name="android_vendor_overlays_404" remote="404" />
-  <project path="vendor/google/gms" name="proprietary_vendor_google_gms" remote="404-gitlab" />
-  <project path="vendor/google/pixel" name="proprietary_vendor_google_pixel" remote="404-gitlab" />
+  <project path="vendor/gms" name="proprietary_vendor_gms" remote="404-gitlab" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="404" />
   <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="404" />
 
