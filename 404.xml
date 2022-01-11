@@ -163,4 +163,5 @@
   <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom-opensource_display-commonsys" remote="404" >
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
   </project>
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="404" />
 </manifest>
