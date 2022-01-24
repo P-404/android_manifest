@@ -124,7 +124,7 @@
   <project  name="platform/external/cblas" path="external/cblas"  />
   <project  name="platform/external/cbor-java" path="external/cbor-java"  />
   <project  name="platform/external/chromium-trace" path="external/chromium-trace"  />
-  <project  name="platform/external/chromium-webview" path="external/chromium-webview"  />
+  <project  clone-depth="1" name="platform/external/chromium-webview" path="external/chromium-webview" remote="aosp" />
   <project  name="platform/external/clang" path="external/clang"  />
   <project  name="platform/external/cldr" path="external/cldr"  />
   <project  name="platform/external/cn-cbor" path="external/cn-cbor"  />
@@ -608,7 +608,7 @@
   <project  name="platform/external/tensorflow" path="external/tensorflow"  />
   <project  name="platform/external/testng" path="external/testng"  />
   <project  name="platform/external/tflite-support" path="external/tflite-support"  />
-  <project clone-depth="2"  name="platform/external/timezone-boundary-builder" path="external/timezone-boundary-builder"  />
+  <project clone-depth="2"  name="platform/external/timezone-boundary-builder" path="external/timezone-boundary-builder" remote="aosp" />
   <project  name="platform/external/tinyalsa" path="external/tinyalsa"  />
   <project  name="platform/external/tinyalsa_new" path="external/tinyalsa_new"  />
   <project  name="platform/external/tinycompress" path="external/tinycompress"  />
