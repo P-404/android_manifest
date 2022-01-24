@@ -72,8 +72,6 @@
   <project path="frameworks/av" name="android_frameworks_av" remote="404" caf="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="android_frameworks_base" remote="404" caf="platform/frameworks/base" />
-  <remove-project name="platform/frameworks/libs/systemui" />
-  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="404" caf="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="android_frameworks_native" remote="404" caf="platform/frameworks/native" />
   
@@ -83,10 +81,8 @@
 
   <!-- Hardware -->
   <project path="hardware/404/interfaces" name="android_hardware_404_interfaces" remote="404" />
-  <remove-project name="platform/hardware/qcom/wlan" />
   <remove-project name="platform/hardware/libhardware" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="404" caf="platform/hardware/libhardware" />
-  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="404" />
 
   <!-- Libcore -->
   <remove-project name="platform/libcore" />
@@ -99,8 +95,6 @@
   <project path="packages/apps/Covers" name="android_packages_apps_Covers" remote="404" />
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="404" caf="platform/packages/apps/Settings" />
-  <remove-project name="platform/packages/apps/SettingsIntelligence" />
-  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="404" caf="platform/packages/apps/SettingsIntelligence" />
   <remove-project name="platform/packages/apps/ThemePicker" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="404" caf="platform/packages/apps/ThemePicker" />
   <remove-project name="platform/packages/apps/WallpaperPicker2" />
@@ -109,8 +103,6 @@
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="404" caf="platform/packages/apps/Dialer" />
   <remove-project  name="platform/packages/modules/Permission" />
   <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="404" caf="platform/packages/modules/Permission" />
-  <remove-project name="platform/packages/apps/DocumentsUI" />
-  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="404" caf="platform/packages/apps/DocumentsUI " />
   <remove-project name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/404Launcher" name="android_packages_apps_404Launcher" remote="404" caf="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/SnapdragonCamera" />
@@ -131,8 +123,6 @@
   <project path="system/core" name="android_system_core" remote="404" caf="platform/system/core" />
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="404" caf="platform/system/sepolicy" />
-  <remove-project name="platform/system/netd" />
-  <project path="system/netd" name="android_system_netd" remote="404" caf="platform/system/netd" />
   <remove-project name="platform/system/vold" />
   <project path="system/vold" name="android_system_vold" remote="404" caf="platform/system/vold" />
     
