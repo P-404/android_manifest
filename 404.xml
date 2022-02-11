@@ -138,6 +138,8 @@
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="404" caf="platform/vendor/qcom-opensource/data-ipa-cfg-mgr">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/ipacm_vendor_product.mk" src="ipacm_vendor_product.mk"/>
   </project>
+  <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
+  <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="404" caf="platform/vendor/qcom-opensource/cryptfs_hw ">
   <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
   <project path="vendor/qcom/opensource/commonsys/fm" name="android_vendor_qcom-opensource_fm-commonsys" remote="404" caf="platform/vendor/qcom-opensource/fm-commonsys" />
   <remove-project name="platform/vendor/qcom-opensource/interfaces" />
