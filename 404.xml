@@ -64,6 +64,7 @@
   <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="404" />
   <remove-project name="platform/external/sqlite" />
   <project path="external/sqlite" name="android_external_sqlite" remote="404" />
+  <project path="external/tinyxml" name="android_external_tinyxml" remote="404" />
   <remove-project name="platform/external/zlib" />
   <project path="external/zlib-ng" name="android_external_zlib-ng" remote="404" />
 
