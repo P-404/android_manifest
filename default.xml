@@ -5,19 +5,19 @@
   <remote name="aosp"
           fetch="https://android.googlesource.com"
           review="https://android-review.googlesource.com/"
-          revision="refs/tags/android-12.0.0_r31"/>
+          revision="refs/tags/android-12.1.0_r4"/>
 
   <!-- CAF -->
   <remote name="caf_system"
-          fetch="https://source.codeaurora.org/quic/la"
-          review="codeaurora.org"/>
+          fetch="https://git.codelinaro.org/clo/la"
+          review="codelinaro.org"/>
 
   <remote name="caf_vendor"
-          fetch="https://source.codeaurora.org/quic/la"
-          review="codeaurora.org"
-          revision="refs/tags/LA.UM.9.12.r1-13800-SMxx50.0"/>
+          fetch="https://git.codelinaro.org/clo/la"
+          review="codelinaro.org"
+          revision="refs/tags/LA.UM.9.12.r1-14100-SMxx50.0"/>
 
-  <default revision="refs/tags/LA.QSSI.12.0.r1-06300-qssi.0"
+  <default revision="refs/tags/LA.QSSI.12.0.r1-06800-qssi.0"
            remote="caf_system"/>
 
   <include name="system.xml"/>
