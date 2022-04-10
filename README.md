@@ -4,21 +4,8 @@
 
 A project that shouldn't have existed by the laws of the internet and yet it does; we present you Project 404, just like the Schrödinger's cat!
 
- Credits
- -------
-  * [**AOSP**](https://android.googlesource.com)
-  * [**LineageOS**](https://github.com/LineageOS)
-  * [**Dirty Unicorns**](https://github.com/DirtyUnicorns)
-  * [**Potato Project**](https://github.com/PotatoProject)
-
  # Project 404
 Error 404: Bugs not found!
-
- ### Requirements
- - Around 100G disk space
- - 50G or more usable internet
- - A computer with at least 8G RAM running Linux or MacOS
- - A brain
 
  ### Instructions
  1. Make sure you have a build environment setup.
