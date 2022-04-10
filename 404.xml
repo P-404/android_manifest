@@ -68,14 +68,6 @@
   <remove-project name="platform/external/zlib" />
   <project path="external/zlib-ng" name="android_external_zlib-ng" remote="404" />
 
-  <!-- Frameworks -->
-  <remove-project name="platform/frameworks/av" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="404" caf="platform/frameworks/av" />
-  <remove-project name="platform/frameworks/base" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="404" caf="platform/frameworks/base" />
-  <remove-project name="platform/frameworks/native" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="404" caf="platform/frameworks/native" />
-  
   <!-- GCC -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" remote="404" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi" name="android_prebuilts_gcc_linux-x86_arm_arm-eabi" remote="404" clone-depth="1" />
