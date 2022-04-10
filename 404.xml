@@ -133,8 +133,6 @@
   </project>
   <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
   <project path="vendor/qcom/opensource/commonsys/fm" name="android_vendor_qcom-opensource_fm-commonsys" remote="404" caf="platform/vendor/qcom-opensource/fm-commonsys" />
-  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
-  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom-opensource_interfaces" remote="404" caf="platform/vendor/qcom-opensource/interfaces" />
   <remove-project name="platform/vendor/qcom-opensource/power" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="404">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk" remote="404"/>
