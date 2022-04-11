@@ -115,6 +115,8 @@
   <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="404" />
 
   <!-- Vendor (CAF) -->
+  <remove-project name="platform/vendor/nxp/opensource/external/libnfc-nci" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="404"/>
   <remove-project name="platform/vendor/nxp/opensource/halimpl" />
   <project path="vendor/nxp/opensource/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="404">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
