@@ -96,6 +96,8 @@
   <project name="android_packages_apps_SnapdragonCamera" path="vendor/codeaurora/packages/apps/SnapdragonCamera" remote="404">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/app_snapcam_product.mk" src="app_snapcam_system_product.mk"/>
   </project>
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="404" caf="platform/packages/apps/Settings" />
   
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/abi-dumps/ndk" />
