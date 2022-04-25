@@ -152,7 +152,4 @@
   <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
   <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="404" />
 
-  <!-- Extras -->
-  <project path="vendor/lawnicons" name="android_vendor_lawnicons" remote="404" />
-
 </manifest>
