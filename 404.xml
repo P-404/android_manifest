@@ -98,7 +98,33 @@
   </project>
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="404" caf="platform/packages/apps/Settings" />
-  
+  <remove-project name="platform/packages/apps/ThemePicker" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="404" caf="platform/packages/apps/ThemePicker" />
+  <remove-project  name="platform/packages/modules/Permission" />
+  <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="404" caf="platform/packages/modules/Permission" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project path="packages/apps/404Launcher" name="android_packages_apps_404Launcher" remote="404" caf="platform/packages/apps/Launcher3" />
+  <remove-project name="platform/packages/services/Telecomm" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="404" caf="platform/packages/services/Telecomm" />
+  <remove-project name="platform/packages/modules/Connectivity" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="404" caf="platform/packages/modules/Connectivity" />
+  <remove-project name="platform/packages/inputmethods/LatinIME" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="404" />
+  <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" remote="404" />
+  <remove-project name="platform/packages/apps/Messaging" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="404" caf="platform/packages/apps/Messaging" />
+  <remove-project name="platform/packages/apps/Dialer" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="404" caf="platform/packages/apps/Dialer" />
+  <remove-project name="platform/packages/apps/Contacts" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="404" caf="platform/packages/apps/Contacts" />
+  <remove-project name="platform/packages/apps/Mms" />
+  <project path="vendor/codeaurora/commonsys/packages/apps/Mms" name="android_packages_apps_Mms" remote="404" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/app_mms_product.mk" src="app_mms_system_product.mk"/>
+  </project>
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="404" />
+  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="404" />
+
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/abi-dumps/ndk" />
   <project path="prebuilts/abi-dumps/ndk" name="android_prebuilts_abi-dumps_ndk" remote="404" />
@@ -153,5 +179,8 @@
   <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="404" />
   <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
   <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="404" />
+
+  <!-- Extras -->
+  <project path="external/Camera" name="GrapheneOS/platform_external_Camera" remote="github" revision="12.1" />
 
 </manifest>
