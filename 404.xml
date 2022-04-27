@@ -10,7 +10,7 @@
           revision="shinka" />
 
   <remote name="404-gitlab"
-          fetch="https://gitlab.com/project-404"
+          fetch="https://gitlab.com/project-404/"
           revision="shinka" />
 
   <!-- 404 Repos -->
@@ -182,5 +182,7 @@
 
   <!-- Extras -->
   <project path="external/Camera" name="GrapheneOS/platform_external_Camera" remote="github" revision="12.1" />
+  <project path="external/faceunlock" name="android_external_faceunlock" remote="404-gitlab" />
+  <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="404" />
 
 </manifest>
