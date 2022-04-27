@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/markakash/404_stuff/master/project404-darkbanner.jpg" />
+  <img src="https://github.com/P-404/stuff/raw/master/dump/banner_shinka.png" />
 </p>
 
 A project that shouldn't have existed by the laws of the internet and yet it does; we present you Project 404, just like the Schrödinger's cat!
@@ -17,9 +17,24 @@ Error 404: Bugs not found!
          repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
  	```
 
- 3. Once the source is downloaded prepare your trees and build.
+ 3. Once the source is downloaded prepare your trees.
+ 	```bash
+         # Inherit from Project 404 vendor config
+         $(call inherit-product, vendor/404/configs/common.mk)
+ 	``` 
+      - for adopting trees you can visit https://github.com/P404-Devices and check bringup stuffs needed from any other device trees.
+      - remove pathmaps from your hals and clone it in respective directories
+        - Display  : hardware/qcom/display
+        - Media : hardware/qcom/media
+        - Audio : vendor/qcom/opensource/audio-hal/primary-hal
 
- ### Reporting compilation issues
+4. Building
+ 	```bash
+         source build/envsetup.sh;
+         lunch p404_$devicecodename-userdebug;
+         make bacon;
+ 	```
+  ### Reporting compilation issues
  - For common porting related errors, visit [**Android Building Help**](https://t.me/AndroidBuildingHelp)
 
  ### Adding Support
