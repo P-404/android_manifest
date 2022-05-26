@@ -177,7 +177,7 @@
   <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="404" />
 
   <!-- Extras -->
-  <project path="external/Camera" name="GrapheneOS/platform_external_Camera" remote="github" revision="12.1" />
+  <project path="external/Camera" name="android_external_Camera" remote="404" />
   <project path="external/faceunlock" name="android_external_faceunlock" remote="404-gitlab" />
   <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="404" />
 
