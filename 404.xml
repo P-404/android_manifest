@@ -130,6 +130,8 @@
   <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="404" />
   
   <!-- System -->
+  <remove-project name="platform/system/libbase" />
+  <project path="system/libbase" name="android_system_libbase" remote="404" />
   <remove-project name="platform/system/tools/hidl" />
   <project path="system/tools/hidl" name="android_system_tools_hidl" remote="404" />
   <remove-project name="platform/system/core" />
