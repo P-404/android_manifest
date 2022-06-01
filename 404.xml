@@ -75,6 +75,8 @@
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="android_frameworks_base" remote="404" caf="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/libs/systemui" />
+  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="404" caf="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="android_frameworks_native" remote="404" caf="platform/frameworks/native" />
 
