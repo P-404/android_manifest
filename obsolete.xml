@@ -62,6 +62,7 @@
   <remove-project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" />
 
   <!-- Vendor -->
+  <remove-project name="device/qcom/vendor-common" />
   <remove-project name="platform/vendor/codeaurora/packages/apps/Dialer" />
 
 </manifest>
