@@ -61,4 +61,7 @@
   <remove-project name="platform/packages/apps/SnapdragonMusic" />
   <remove-project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" />
 
+  <!-- Vendor -->
+  <remove-project name="platform/vendor/codeaurora/packages/apps/Dialer" />
+
 </manifest>
