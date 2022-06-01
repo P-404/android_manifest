@@ -70,7 +70,7 @@
   <project path="external/sqlite" name="android_external_sqlite" remote="404" />
   <project path="external/tinyxml" name="android_external_tinyxml" remote="404" />
   <remove-project name="platform/external/zlib" />
-  <project path="external/zlib-ng" name="android_external_zlib-ng" remote="404" />
+  <project path="external/zlib" name="android_external_zlib" remote="404" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
