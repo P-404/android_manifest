@@ -62,6 +62,8 @@
   <!-- External -->
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="404" />
+  <remove-project name="platform/external/harfbuzz_ng" />
+  <project path="external/harfbuzz_ng" name="android_external_harfbuzz_ng" remote="404" caf="platform/external/harfbuzz_ng" />
   <remove-project name="platform/external/jemalloc_new" />
   <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="404" />
   <remove-project name="platform/external/libjpeg-turbo" />
