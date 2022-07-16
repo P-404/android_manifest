@@ -58,6 +58,7 @@
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="404" />
   <remove-project  name="device/qcom/sepolicy" />
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="404" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="404" />
 
   <!-- External -->
   <remove-project name="platform/external/arm-optimized-routines" />
@@ -188,5 +189,5 @@
   <project path="external/Camera" name="android_external_Camera" remote="404" />
   <project path="external/faceunlock" name="android_external_faceunlock" remote="404-gitlab" />
   <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="404" />
-
+  
 </manifest>
