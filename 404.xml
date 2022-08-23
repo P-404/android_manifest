@@ -7,22 +7,19 @@
 
   <remote name="404"
           fetch="https://github.com/P-404/"
+          revision="tokui" />
+
+  <remote name="404-old"
+          fetch="https://github.com/P-404/"
           revision="shinka" />
 
-  <remote name="404-gitlab"
+  <!-- <remote name="404-gitlab"
           fetch="https://gitlab.com/project-404/"
-          revision="shinka" />
-
-  <!-- 404 Repos -->
-
-  <!-- Art -->
-  <remove-project name="platform/art" />
-  <project path="art" name="android_art" remote="404" caf="platform/art" />
+          revision="tokui" /> -->
 
   <!-- Build and Core -->
   <remove-project name="platform/build_repo" />
   <project path="build/make" name="android_build" remote="404" caf="platform/build_repo" >
-    <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -36,14 +33,6 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
-  <!-- Bionic -->
-  <remove-project name="platform/bionic" />
-  <project path="bionic" name="android_bionic" remote="404" caf="platform/bionic" />
-
-  <!-- Bootable -->
-  <remove-project name="platform/bootable/recovery" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="404" caf="platform/bootable/recovery" />
-
   <!-- CTS -->
   <remove-project name="platform/cts" />
   <project path="cts" name="platform/cts" remote="aosp" />
@@ -54,36 +43,12 @@
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
   <project path="device/404/sepolicy" name="android_device_404_sepolicy" remote="404" />
-  <remove-project name="device/qcom/sepolicy_vndr"/>
-  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="404" />
-  <remove-project  name="device/qcom/sepolicy" />
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="404" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="404" />
 
   <!-- External -->
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="404" />
-  <remove-project name="platform/external/harfbuzz_ng" />
-  <project path="external/harfbuzz_ng" name="android_external_harfbuzz_ng" remote="404" caf="platform/external/harfbuzz_ng" />
-  <remove-project name="platform/external/jemalloc_new" />
-  <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="404" />
-  <remove-project name="platform/external/libjpeg-turbo" />
-  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="404" />
-  <remove-project name="platform/external/sqlite" />
-  <project path="external/sqlite" name="android_external_sqlite" remote="404" />
-  <project path="external/tinyxml" name="android_external_tinyxml" remote="404" />
-  <remove-project name="platform/external/zlib" />
-  <project path="external/zlib" name="android_external_zlib" remote="404" />
-
-  <!-- Frameworks -->
-  <remove-project name="platform/frameworks/av" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="404" caf="platform/frameworks/av" />
-  <remove-project name="platform/frameworks/base" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="404" caf="platform/frameworks/base" />
-  <remove-project name="platform/frameworks/libs/systemui" />
-  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="404" caf="platform/frameworks/libs/systemui" />
-  <remove-project name="platform/frameworks/native" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="404" caf="platform/frameworks/native" />
+  <project path="external/tinyxml" name="android_external_tinyxml" remote="404-old" />
 
   <!-- GCC -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" remote="404" clone-depth="1" />
@@ -91,41 +56,13 @@
 
   <!-- Hardware -->
   <project path="hardware/404/interfaces" name="android_hardware_404_interfaces" remote="404" />
-  <remove-project name="platform/hardware/libhardware" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="404" caf="platform/hardware/libhardware" />
-
-  <!-- Libcore -->
-  <remove-project name="platform/libcore" />
-  <project path="libcore" name="android_libcore" remote="404" caf="platform/libcore" />
 
   <!-- Manifest -->
   <project path="manifest" name="android_manifest" remote="404" />
 
   <!-- Packages -->
   <project path="packages/apps/Covers" name="android_packages_apps_Covers" remote="404" />
-  <remove-project name="platform/packages/apps/Settings" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="404" caf="platform/packages/apps/Settings" />
-  <remove-project name="platform/packages/apps/ThemePicker" />
-  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="404" caf="platform/packages/apps/ThemePicker" />
-  <remove-project  name="platform/packages/modules/Permission" />
-  <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="404" caf="platform/packages/modules/Permission" />
-  <remove-project name="platform/packages/apps/Launcher3" />
-  <project path="packages/apps/404Launcher" name="android_packages_apps_404Launcher" remote="404" caf="platform/packages/apps/Launcher3" />
-  <remove-project name="platform/packages/services/Telecomm" />
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="404" caf="platform/packages/services/Telecomm" />
-  <remove-project name="platform/packages/modules/Connectivity" />
-  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="404" caf="platform/packages/modules/Connectivity" />
-  <remove-project name="platform/packages/inputmethods/LatinIME" />
-  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="404" />
   <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" remote="404" />
-  <remove-project name="platform/packages/apps/Messaging" />
-  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="404" caf="platform/packages/apps/Messaging" />
-  <remove-project name="platform/packages/apps/Dialer" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="404" caf="platform/packages/apps/Dialer" />
-  <remove-project name="platform/packages/apps/Contacts" />
-  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="404" caf="platform/packages/apps/Contacts" />
-  <remove-project name="platform/packages/apps/SettingsIntelligence" />
-  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="404" />
   <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="404" />
 
   <!-- Prebuilts -->
@@ -135,31 +72,23 @@
   <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="404" />
   
   <!-- System -->
-  <remove-project name="platform/system/libbase" />
-  <project path="system/libbase" name="android_system_libbase" remote="404" />
   <remove-project name="platform/system/tools/hidl" />
   <project path="system/tools/hidl" name="android_system_tools_hidl" remote="404" />
-  <remove-project name="platform/system/core" />
-  <project path="system/core" name="android_system_core" remote="404" caf="platform/system/core" />
-  <remove-project name="platform/system/sepolicy" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="404" caf="platform/system/sepolicy" />
-  <remove-project name="platform/system/vold" />
-  <project path="system/vold" name="android_system_vold" remote="404" caf="platform/system/vold" />
-    
+
   <!-- Vendor -->
   <project path="vendor/404" name="android_vendor_404" remote="404" />
   <project path="vendor/overlays/404" name="android_vendor_overlays_404" remote="404" />
-  <project path="vendor/gms" name="proprietary_vendor_gms" remote="404-gitlab" />
+  <!-- <project path="vendor/gms" name="proprietary_vendor_gms" remote="404-gitlab" /> -->
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="404" />
   <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="404" />
 
   <!-- Vendor (CAF) -->
   <remove-project name="platform/vendor/codeaurora/telephony" />
-  <project path="vendor/codeaurora/commonsys/telephony" name="android_vendor_codeaurora_commonsys_telephony" remote="404" />
+  <project path="vendor/codeaurora/commonsys/telephony" name="android_vendor_codeaurora_commonsys_telephony" remote="404-old" />
   <remove-project name="platform/vendor/nxp/opensource/external/libnfc-nci" />
-  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="404"/>
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="404-old"/>
   <remove-project name="platform/vendor/nxp/opensource/halimpl" />
-  <project path="vendor/nxp/opensource/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="404">
+  <project path="vendor/nxp/opensource/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="404-old">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
   </project>
   <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
@@ -167,11 +96,11 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/ipacm_vendor_product.mk" src="ipacm_vendor_product.mk"/>
   </project>
   <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
-  <project path="vendor/qcom/opensource/commonsys/fm" name="android_vendor_qcom-opensource_fm-commonsys" remote="404" caf="platform/vendor/qcom-opensource/fm-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/fm" name="android_vendor_qcom-opensource_fm-commonsys" remote="404-old" caf="platform/vendor/qcom-opensource/fm-commonsys" />
   <remove-project name="platform/vendor/qcom-opensource/power" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="404">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk" remote="404"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk" remote="404"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk" remote="404-old"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk" remote="404-old"/>
   </project>
   <remove-project name="platform/vendor/qcom-opensource/vibrator" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom-opensource_vibrator" remote="404" />
@@ -181,15 +110,10 @@
   <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom-opensource_display-commonsys" remote="404" >
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
   </project>
-  <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="404" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="404-old" />
   <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
-  <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="404" />
-  <remove-project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" />
-  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom-opensource_packages_apps_Bluetooth" remote="404" />
+  <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="404-old" />
   
   <!-- Extras -->
   <project path="external/Camera" name="android_external_Camera" remote="404" />
-  <project path="external/faceunlock" name="android_external_faceunlock" remote="404-gitlab" />
-  <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="404" />
-  
 </manifest>
