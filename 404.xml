@@ -33,6 +33,10 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- Bionic -->
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="android_bionic" remote="404" caf="platform/bionic" />
+
   <!-- CTS -->
   <remove-project name="platform/cts" />
   <project path="cts" name="platform/cts" remote="aosp" />
@@ -44,6 +48,8 @@
   </project>
   <project path="device/404/sepolicy" name="android_device_404_sepolicy" remote="404" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="404" />
+  <remove-project name="device/qcom/sepolicy_vndr"/>
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="404" />
 
   <!-- External -->
   <remove-project name="platform/external/arm-optimized-routines" />
@@ -53,9 +59,14 @@
   <!-- GCC -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" remote="404" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi" name="android_prebuilts_gcc_linux-x86_arm_arm-eabi" remote="404" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" clone-depth="1" remote="404" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" clone-depth="1" remote="404" />
+  <project path="prebuilts/tools-p404" name="android_prebuilts_tools-extras" remote="404" />
 
   <!-- Hardware -->
   <project path="hardware/404/interfaces" name="android_hardware_404_interfaces" remote="404" />
+  <remove-project name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="404" caf="platform/hardware/libhardware" />
 
   <!-- Manifest -->
   <project path="manifest" name="android_manifest" remote="404" />
@@ -63,7 +74,8 @@
   <!-- Packages -->
   <project path="packages/apps/Covers" name="android_packages_apps_Covers" remote="404" />
   <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" remote="404" />
-  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="404" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="404" />
 
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/abi-dumps/ndk" />
@@ -74,7 +86,9 @@
   <!-- System -->
   <remove-project name="platform/system/tools/hidl" />
   <project path="system/tools/hidl" name="android_system_tools_hidl" remote="404" />
-
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="android_system_core" remote="404" caf="platform/system/core" />
+  
   <!-- Vendor -->
   <project path="vendor/404" name="android_vendor_404" remote="404" />
   <project path="vendor/overlays/404" name="android_vendor_overlays_404" remote="404" />
@@ -84,9 +98,9 @@
 
   <!-- Vendor (CAF) -->
   <remove-project name="platform/vendor/codeaurora/telephony" />
-  <project path="vendor/codeaurora/commonsys/telephony" name="android_vendor_codeaurora_commonsys_telephony" remote="404-old" />
+  <project path="vendor/codeaurora/commonsys/telephony" name="android_vendor_codeaurora_commonsys_telephony" remote="404" />
   <remove-project name="platform/vendor/nxp/opensource/external/libnfc-nci" />
-  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="404-old"/>
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="404"/>
   <remove-project name="platform/vendor/nxp/opensource/halimpl" />
   <project path="vendor/nxp/opensource/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="404-old">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
@@ -99,8 +113,8 @@
   <project path="vendor/qcom/opensource/commonsys/fm" name="android_vendor_qcom-opensource_fm-commonsys" remote="404-old" caf="platform/vendor/qcom-opensource/fm-commonsys" />
   <remove-project name="platform/vendor/qcom-opensource/power" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="404">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk" remote="404-old"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk" remote="404-old"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk" remote="404"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk" remote="404"/>
   </project>
   <remove-project name="platform/vendor/qcom-opensource/vibrator" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom-opensource_vibrator" remote="404" />
@@ -113,6 +127,10 @@
   <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="404-old" />
   <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
   <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="404-old" />
+  <remove-project name="platform/vendor/qcom-opensource/system/bt" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_commonsys_system_bt" remote="404" />
+  <remove-project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom-opensource_packages_apps_Bluetooth" remote="404" />
   
   <!-- Extras -->
   <project path="external/Camera" name="android_external_Camera" remote="404" />
