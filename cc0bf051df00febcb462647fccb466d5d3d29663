@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "671f294f_ba8bdf59",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000001
+      },
+      "writtenOn": "2022-09-23T12:51:34Z",
+      "side": 1,
+      "message": "Move it to Extra since it is not a 404 package\n",
+      "revId": "cc0bf051df00febcb462647fccb466d5d3d29663",
+      "serverId": "c85314f7-38ff-4b73-93db-2637f3516207"
+    }
+  ]
+}
