@@ -75,6 +75,8 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="404" caf="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="android_frameworks_native" remote="404" caf="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/libs/systemui" />
+  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="404" caf="platform/frameworks/libs/systemui" />
 
   <!-- GCC -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf" remote="404" clone-depth="1" />
@@ -99,6 +101,8 @@
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="404" caf="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/modules/Bluetooth" />
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="404" caf="platform/packages/modules/Bluetooth" />
+  <remove-project name="platform/packages/apps/ThemePicker" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="404" caf="platform/packages/apps/ThemePicker" />
 
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/abi-dumps/ndk" />
@@ -140,6 +144,11 @@
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="404" />
   <remove-project name="platform/vendor/qcom-opensource/vibrator" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom-opensource_vibrator" remote="404" />
+  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="404" caf="platform/vendor/qcom-opensource/data-ipa-cfg-mgr">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/ipacm_vendor_product.mk" src="ipacm_vendor_product.mk"/>
+  </project>
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="404" />
   
   <!-- Extras -->
   <project path="external/Camera" name="android_external_Camera" remote="404" />
