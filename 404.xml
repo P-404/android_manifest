@@ -127,6 +127,8 @@
   <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom-opensource_packages_apps_Bluetooth" remote="404" caf="platform/vendor/qcom-opensource/packages/apps/Bluetooth"/>
   <remove-project name="platform/vendor/qcom-opensource/system/bt" />
   <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_commonsys_system_bt" remote="404" caf="platform/vendor/qcom-opensource/system/bt"/>
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/fm" name="android_vendor_qcom-opensource_fm-commonsys" remote="404" caf="platform/vendor/qcom-opensource/fm-commonsys" />
 
   <!-- System -->
   <remove-project name="platform/system/core" />
