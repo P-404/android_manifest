@@ -404,7 +404,7 @@
   <project name="platform/external/vulkan-headers" path="external/vulkan-headers"/>
   <project name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers"/>
   <project name="platform/external/walt" path="external/walt"/>
-  <project name="platform/external/wayland" path="external/wayland"/>
+  <project name="platform/external/wayland_repo" path="external/wayland"/>
   <project name="platform/external/wayland-protocols" path="external/wayland-protocols"/>
   <project name="platform/external/webp" path="external/webp"/>
   <project name="platform/external/webrtc" path="external/webrtc"/>
@@ -709,7 +709,7 @@
   <project name="platform/tools/security" path="tools/security"/>
   <project name="platform/tools/test/connectivity" path="tools/test/connectivity"/>
   <project name="platform/tools/test/graphicsbenchmark" path="tools/test/graphicsbenchmark"/>
-  <project name="platform/tools/tradefederation" path="tools/tradefederation/core"/>
+  <project name="platform/tools/tradefederation_repo" path="tools/tradefederation/core"/>
   <project name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib"/>
   <project name="platform/tools/trebuchet" path="tools/trebuchet"/>
   <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer"/>
