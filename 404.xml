@@ -69,6 +69,8 @@
   <remove-project name="platform/external/sqlite" />
   <project path="external/sqlite" name="android_external_sqlite" remote="404" />
   <project path="external/tinyxml" name="android_external_tinyxml" remote="404" />
+  <remove-project name="platform/external/fastrpc" />
+  <project path="external/fastrpc" name="android_external_fastrpc" remote="404" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
