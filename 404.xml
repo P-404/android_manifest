@@ -84,6 +84,8 @@
 
   <!-- Hardware -->
   <project path="hardware/404/interfaces" name="android_hardware_404_interfaces" remote="404" />
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="404" caf="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="404" caf="platform/hardware/libhardware" />
 
