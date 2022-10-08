@@ -112,10 +112,6 @@
   <project path="prebuilts/tools-p404" name="android_prebuilts_tools-extras" remote="404" />
   
   <!-- System (CLO) -->
-  <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
-  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom-opensource_display-commonsys" remote="404" caf="platform/vendor/qcom-opensource/display-commonsys">
-    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
-  </project>
   <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom-opensource_bluetooth-commonsys-intf" remote="404" caf="platform/vendor/qcom-opensource/bluetooth-commonsys-intf"/>
   <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
