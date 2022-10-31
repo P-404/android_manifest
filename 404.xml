@@ -73,6 +73,8 @@
   <project path="external/fastrpc" name="android_external_fastrpc" remote="404" />
 
   <!-- Frameworks -->
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="404" caf="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="android_frameworks_base" remote="404" caf="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
