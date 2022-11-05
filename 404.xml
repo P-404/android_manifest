@@ -134,6 +134,8 @@
   <!-- System -->
   <remove-project name="platform/system/core" />
   <project path="system/core" name="android_system_core" remote="404" caf="platform/system/core" />
+  <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="404" caf="platform/system/sepolicy" />
   
   <!-- Vendor -->
   <project path="vendor/404" name="android_vendor_404" remote="404" />
