@@ -157,5 +157,7 @@
   
   <!-- Extras -->
   <project path="external/Camera" name="android_external_Camera" remote="404" />
+  <project path="external/faceunlock" name="android_external_faceunlock" remote="404-gitlab" />
+  <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="404" />
   <project path="packages/apps/RepainterServicePriv" name="android_packages_apps_RepainterServicePriv" remote="404" />
 </manifest>
