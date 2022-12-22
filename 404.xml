@@ -81,6 +81,8 @@
   <project path="frameworks/native" name="android_frameworks_native" remote="404" caf="platform/frameworks/native" />
   <remove-project name="platform/frameworks/libs/systemui" />
   <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="404" caf="platform/frameworks/libs/systemui" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="404" caf="platform/frameworks/opt/telephony"/>
 
   <!-- Hardware -->
   <project path="hardware/404/interfaces" name="android_hardware_404_interfaces" remote="404" />
@@ -101,8 +103,6 @@
   <project path="packages/apps/404Launcher" name="android_packages_apps_404Launcher" remote="404" caf="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="404" caf="platform/packages/apps/Settings" />
-  <remove-project name="platform/packages/modules/Bluetooth" />
-  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="404" caf="platform/packages/modules/Bluetooth" />
   <remove-project name="platform/packages/apps/ThemePicker" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="404" caf="platform/packages/apps/ThemePicker" />
 
