@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bab6d7a3_4487a9fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000001
+      },
+      "writtenOn": "2023-01-30T08:08:23Z",
+      "side": 1,
+      "message": "Commit Will be removed after rebase task will be completed",
+      "revId": "d7fbb9ad34c48df38670ecfc1caf2dd8b2d9e407",
+      "serverId": "c85314f7-38ff-4b73-93db-2637f3516207"
+    }
+  ]
+}
