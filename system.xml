@@ -865,6 +865,7 @@
   <project name="platform/packages/modules/GeoTZ" path="packages/modules/GeoTZ"/>
   <project name="platform/packages/modules/Gki" path="packages/modules/Gki"/>
   <project name="platform/packages/modules/IPsec" path="packages/modules/IPsec"/>
+  <project name="platform/packages/modules/IntentResolver" path="packages/modules/IntentResolver"/>
   <project name="platform/packages/modules/Media" path="packages/modules/Media"/>
   <project name="platform/packages/modules/ModuleMetadata" path="packages/modules/ModuleMetadata"/>
   <project name="platform/packages/modules/NetworkPermissionConfig" path="packages/modules/NetworkPermissionConfig"/>
