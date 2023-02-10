@@ -93,7 +93,8 @@
   <!-- Packages (404) -->
   <project path="packages/apps/Covers" name="android_packages_apps_Covers" remote="404" />
   <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" remote="404" />
-
+  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="404" />
+  
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/404Launcher" name="android_packages_apps_404Launcher" remote="404" caf="platform/packages/apps/Launcher3" />
