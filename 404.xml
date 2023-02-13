@@ -13,6 +13,10 @@
           fetch="https://gitlab.com/project-404/"
           revision="tokui" />
 
+  <remote  name="p404-devices"
+           fetch="https://github.com/P404-Devices/"
+           revision="tokui" />
+
   <!-- 404 Repos -->
 
   <!-- Art -->
