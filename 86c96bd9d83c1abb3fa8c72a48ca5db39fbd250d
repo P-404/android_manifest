@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0dc3fdd3_13abae56",
+        "filename": "default.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000001
+      },
+      "writtenOn": "2023-02-13T11:02:21Z",
+      "side": 1,
+      "message": "lol",
+      "revId": "86c96bd9d83c1abb3fa8c72a48ca5db39fbd250d",
+      "serverId": "c85314f7-38ff-4b73-93db-2637f3516207"
+    }
+  ]
+}
