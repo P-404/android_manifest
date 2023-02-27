@@ -73,6 +73,12 @@
   <project path="external/fastrpc" name="android_external_fastrpc" remote="404" />
   <remove-project name="platform/external/wpa_supplicant_8" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa-supplicant-8" remote="404" />
+  <remove-project name="platform/external/mksh" />
+  <project path="external/mksh" name="android_external_mksh" remote="404" />
+  <remove-project name="platform/external/gptfdisk" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="404" />
+  <remove-project name="platform/external/e2fsprogs " />
+  <project path="external/e2fsprogs " name="android_external_e2fsprogs" remote="404" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/libs/systemui" />
@@ -106,6 +112,8 @@
   <project path="packages/apps/404Launcher" name="android_packages_apps_404Launcher" remote="404" caf="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="404" caf="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="404" caf="platform/packages/apps/SettingsIntelligence" />
   <remove-project name="platform/packages/apps/ThemePicker" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="404" caf="platform/packages/apps/ThemePicker" />
  <remove-project name="platform/packages/apps/Messaging" />
@@ -116,6 +124,8 @@
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="404" caf="platform/packages/apps/Contacts" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="404" />
+  <remove-project name="platform/packages/modules/adb" />
+  <project path="packages/modules/adb " name="android_packages_modules_adb" remote="404" caf="platform/packages/modules/adb" />
 
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/abi-dumps/ndk" />
@@ -147,6 +157,10 @@
   <project path="system/core" name="android_system_core" remote="404" caf="platform/system/core" />
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="404" caf="platform/system/sepolicy" />
+  <remove-project name="platform/system/libziparchive" />
+  <project path="system/libziparchive" name="android_system_libziparchive" remote="404" caf="platform/system/libziparchive" />
+  <remove-project name="platform/system/update_engine" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="404" caf="platform/system/update_engine" />
   
   <!-- Vendor -->
   <project path="vendor/404" name="android_vendor_404" remote="404" />
