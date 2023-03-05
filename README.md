@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/P-404/stuff/raw/master/dump/banner_shinka.png" />
+  <img src="https://github.com/P-404/stuff/raw/master/dump/Tokui.png" />
 </p>
 
 A project that shouldn't have existed by the laws of the internet and yet it does; we present you Project 404, just like the Schrödinger's cat!
