@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2152efac_3fd21d41",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2023-03-11T23:49:53Z",
+      "side": 1,
+      "message": "Needed for sm7325 compilation",
+      "revId": "5a246c53b2c7b4292db7351c8dadfadb21091f95",
+      "serverId": "c85314f7-38ff-4b73-93db-2637f3516207"
+    }
+  ]
+}
