@@ -83,6 +83,8 @@
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="404" />
   <remove-project name="platform/external/e2fsprogs" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="404" />
+  <remove-project name="platform/external/tinycompress" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="404" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/libs/systemui" />
