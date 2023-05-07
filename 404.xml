@@ -43,10 +43,6 @@
   <remove-project name="platform/bionic" />
   <project path="bionic" name="android_bionic" remote="404" caf="platform/bionic" />
 
-  <!-- Bootable -->
-  <remove-project name="platform/bootable/recovery" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="404" caf="platform/bootable/recovery" />
-
   <!-- Device -->
   <remove-project name="device/qcom/common" />
   <project path="device/qcom/common" name="android_device_qcom_common" remote="404" >
@@ -85,12 +81,10 @@
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="404" />
 
   <!-- Frameworks -->
-  <remove-project name="platform/frameworks/libs/systemui" />
-  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="404" caf="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/av" />
   <project path="frameworks/av" name="android_frameworks_av" remote="404" caf="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="404" caf="platform/frameworks/base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="404" caf="platform/frameworks/base"/>
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="android_frameworks_native" remote="404" caf="platform/frameworks/native" />
 
