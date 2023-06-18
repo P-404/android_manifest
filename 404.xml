@@ -64,6 +64,8 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="404" caf="platform/frameworks/base"/>
   <remove-project name="platform/frameworks/opt/telephony" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="404" />
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="404" caf="platform/frameworks/native" />
   
   <!-- Hardware -->
   <project path="hardware/404/interfaces" name="android_hardware_404_interfaces" remote="404" />
