@@ -35,6 +35,10 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- Bootable -->
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="404" caf="platform/bootable/recovery" />
+  
   <!-- Device -->
   <remove-project name="device/qcom/common" />
   <project path="device/qcom/common" name="android_device_qcom_common" remote="404" >
