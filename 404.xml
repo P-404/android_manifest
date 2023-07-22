@@ -38,7 +38,7 @@
   <!-- Bootable -->
   <remove-project name="platform/bootable/recovery" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="404" caf="platform/bootable/recovery" />
-  
+
   <!-- Device -->
   <remove-project name="device/qcom/common" />
   <project path="device/qcom/common" name="android_device_qcom_common" remote="404" >
@@ -94,7 +94,9 @@
   <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="404" />
-  
+  <remove-project name="platform/packages/modules/Connectivity" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="404" caf="platform/packages/modules/Connectivity" />
+
   <!-- Vendor -->
   <project path="vendor/404" name="android_vendor_404" remote="404" />
   <project path="vendor/overlays/404" name="android_vendor_overlays_404" remote="404" />
