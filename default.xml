@@ -7,27 +7,41 @@
           sync-c="true"
           sync-tags="false"
           review="https://android-review.googlesource.com/"
-          revision="refs/tags/android-13.0.0_r13"/>
+          revision="refs/tags/android-14.0.0_r2"/>
 
   <!-- CLO -->
-  <remote name="clo_system"
+  <remote name="clo-la"
           fetch="https://git.codelinaro.org/clo/la"
           sync-c="true"
-          sync-tags="false"
-          review="codelinaro.org"/>
+          sync-tags="false" />
 
-  <remote name="clo_vendor"
+  <default remote="clo-la"/>
+
+ <remote name="clo_vendor"
           fetch="https://git.codelinaro.org/clo/la"
           sync-c="true"
           sync-tags="false"
           review="codelinaro.org"
-          revision="refs/tags/LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0"/>
-
-  <default revision="refs/tags/LA.QSSI.13.0.r1-11500.02-qssi.0"
-           remote="clo_system"/>
+          revision="refs/tags/LA.UM.9.14.r1-22900.01-LAHAINA.QSSI14.0"/>
 
   <include name="system.xml"/>
   <include name="vendor.xml"/>
+
+ <!-- Github remote -->
+  <remote name="github"
+          fetch="https://github.com/" />
+
+  <remote name="404"
+          fetch="https://github.com/P-404/"
+          revision="umai" />
+
+  <remote name="404-gitlab"
+          fetch="https://gitlab.com/project-404/"
+          revision="umai" />
+
+  <remote  name="p404-devices"
+           fetch="https://github.com/P404-Devices/"
+           revision="umai" />
 
   <!-- 404 -->
   <include name="404.xml"/>
