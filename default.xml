@@ -16,14 +16,7 @@
           sync-tags="false" />
 
   <default remote="clo-la"/>
-
- <remote name="clo_vendor"
-          fetch="https://git.codelinaro.org/clo/la"
-          sync-c="true"
-          sync-tags="false"
-          review="codelinaro.org"
-          revision="refs/tags/LA.UM.9.14.r1-22900.01-LAHAINA.QSSI14.0"/>
-
+  
   <include name="system.xml"/>
   <include name="vendor.xml"/>
 
