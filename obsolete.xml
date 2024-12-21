@@ -14,7 +14,6 @@
   <remove-project name="device/generic/mini-emulator-x86"/>
   <remove-project name="device/generic/mini-emulator-x86_64"/>
   <remove-project name="device/generic/opengl-transport"/>
-  <remove-project name="device/generic/qemu"/>
   <remove-project name="device/generic/trusty"/>
   <remove-project name="device/generic/uml"/>
   <remove-project name="device/generic/x86"/>
