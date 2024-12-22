@@ -54,7 +54,7 @@
 	<remove-project name="platform/system/core" />
 	<project path="system/core" name="android_system_core" remote="404" />
 	<remove-project name="platform/system/qcom" />
-	<project path="vendor/qcom/opensource/softap" name="vendor_qcom_opensource_softap" remote="404" />
+	<project path="vendor/qcom/opensource/softap" name="android_vendor_qcom_opensource_softap" remote="404" />
 	<!-- Vendor -->
 	<project path="vendor/404" name="android_vendor_404" remote="404" />
 	<project path="vendor/overlays/404" name="android_vendor_overlays_404" remote="404" />
@@ -81,6 +81,4 @@
 	<project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom-opensource_dataservices" remote="404" />
 	<remove-project name="platform/vendor/qcom-opensource/vibrator" />
 	<project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom-opensource_vibrator" remote="404" />
-	<remove-project name="platform/vendor/qcom-opensource/usb" />
-	<project path="vendor/qcom/opensource/usb" name="android_vendor_qcom-opensource_usb" remote="404" />
 </manifest>
