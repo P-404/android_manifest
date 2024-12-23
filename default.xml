@@ -19,6 +19,7 @@
   
   <include name="system.xml"/>
   <include name="vendor.xml"/>
+  <include name="aosp.xml"/>
 
  <!-- Github remote -->
   <remote name="github"
