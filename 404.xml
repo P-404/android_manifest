@@ -81,4 +81,6 @@
 	<project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom-opensource_dataservices" remote="404" />
 	<remove-project name="platform/vendor/qcom-opensource/vibrator" />
 	<project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom-opensource_vibrator" remote="404" />
+	<remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+  	<project path="vendor/qcom/opensource/commonsys/fm" name="android_vendor_qcom-opensource_fm-commonsys" remote="404" />
 </manifest>
