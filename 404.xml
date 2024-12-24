@@ -33,10 +33,14 @@
 		<linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk"/>
 	</project>
 	<!-- External -->
+        <remove-project name="platform/external/e2fsprogs" />
+        <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="404" />
 	<remove-project name="platform/external/fastrpc" />
 	<project path="external/fastrpc" name="android_external_fastrpc" remote="404" />
 	<remove-project name="platform/external/json-c" />
 	<project path="external/json-c" name="android_external_json-c" remote="404" />
+        <remove-project name="platform/external/mksh" />
+        <project path="external/mksh" name="android_external_mksh" remote="404" />
 	<remove-project name="platform/external/tinycompress" />
 	<project path="external/tinycompress" name="android_external_tinycompress" remote="404" />
 	<!-- Hardware -->
