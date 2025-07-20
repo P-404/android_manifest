@@ -15,7 +15,7 @@ Error 404: Bugs not found!
  3. Once the source is downloaded prepare your trees.
  	```bash
     # Inherit from Project 404 vendor config
-    $(call inherit-product, vendor/404/configs/common.mk)
+    $(call inherit-product, vendor/404/config/common_full_phone.mk)
  	```
  4. Building (Details Soon)  
   
