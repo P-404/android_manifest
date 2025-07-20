@@ -1022,4 +1022,6 @@
   </project>
   <!-- END open-source projects -->
 
+  <include name="custom/404.xml" />
+  <include name="custom/lineage.xml" />
 </manifest>
