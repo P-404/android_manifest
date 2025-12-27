@@ -8,7 +8,7 @@ Error 404: Bugs not found!
  2. Run the following commands to sync Project-404 source
 
  	```bash
-    repo init -u https://github.com/P-404/android_manifest -b sixteen
+    repo init -u https://github.com/P-404/android_manifest -b bijin_q2
     repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
  	```
 
